@@ -1,0 +1,15 @@
+<div class="bar bar-header bar-positive">
+    <button class="button icon ion-ios-arrow-left close-js">返回</button>
+    <h1 class="title">url参数</h1>
+     <button class="button close-js">首页</button>
+</div>
+<div class="scroll-content has-header">
+    <h4>我是第四个页面,获取的URLID是：<span id="myID"></span></h4>
+    <div class="padding">
+        <button class="button button-block button-assertive close-js">搜索</button>
+    </div>
+    <%var list = root.data.list%>
+    <p>hello: <%= list.name %></p>
+    <p>属性：<%= list.property%></p>
+    <p>请求状态：<%= root.status%></p>
+</div>

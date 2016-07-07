@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+    <title>手机端框架介绍</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+    <link href="css/ionic.min.css" rel="stylesheet">
+    <link href="css/base_css3.css" rel="stylesheet">
+   <!-- <script src="http://172.31.118.83:8081/target/target-script-min.js#anonymous"></script>-->
+</head>
+<body>
+<div class="bar bar-header bar-positive">
+    <!--<button class="button icon ion-ios-arrow-left">返回</button>-->
+    <h1 class="title">关于Lion</h1>
+   <!-- <button class="button">首页</button>-->
+</div>
+<div class="scroll-content has-header">
+    <div id="wrapper" class="wrapper behind-js">
+        <div id="scroller" class="scroller">
+            <ul>
+                <li class="item item-icon-left item-icon-right">
+                    <a href="#/right" class="block dropMenu-js">
+                        <h2>从右边弹出</h2>
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="item item-icon-left item-icon-right">
+                    <a href="#/down" class="bottomMenu-js block">
+                        <h2>从底部弹出</h2>
+                        <i class="icon ion-ios-arrow-thin-up"></i>
+                    </a>
+                </li>
+                <li class="item item-icon-left item-icon-right">
+                    <a href="#/top" class="topMenu-js block">
+                        <h2>从顶部弹出</h2>
+                        <i class="icon ion-ios-arrow-thin-down"></i>
+                    </a>
+                </li>
+                <li class="item item-icon-left item-icon-right">
+                    <a href="#/books/view/250" class="dropMenu-js block">
+                        <h2>获取URL参数</h2>
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="mt15 text-center"><span data-bind-1="name"></span>
+        </div>
+    </div>
+</div>
+<div id="contentWrap" class="subLayer" style="display:none;">
+
+</div>
+   <script src="js/libs/require.min.js" data-main="js/main.js"></script>
+</body>
+</html>
